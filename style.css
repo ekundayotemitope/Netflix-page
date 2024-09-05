@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+/* Header Section */
+nav img{
+    width: 150px;
+}
+
+.Header{
+    width: 100%;
+    height: 100vh;  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./img/netflix-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 5%;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+padding: 10px;
+}
+
+nav button{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.lang-btn{
+    padding: 10px 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: transparent;
+}
+
+.header-content{
+    color: white;
+   text-align: center;
+   padding-top: 8%;
+}
+
+.header-content h1{
+    font-size: 50px;
+}
+
+.header-content h3{
+    font-size: 30px;
+}
+
+.header-content p{
+    font-size: 20px;
+}
+
+ input{
+    padding: 15px 120px;
+   text-align: start;
+   background-color: darkgray;
+   border-radius: 4px;
+   color: white;
+   font-size: 15px;
+}
+
+button{
+    padding: 15px 35px;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+/* section2 */
+.features {
+    padding: 80px 10%;
+    font-size: 22px;
+    border-top: 6px solid gray;
+    background-color: black;
+    color: white;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 10%;
+}
+
+.text-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img {
+    display: block;
+    width: 90%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.features h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+ 
+.faq {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+    border-top: 6px solid #333;
+    background-color: black;
+    color: white;
+}
+
+.faq h2 {
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label:hover {
+    background-color: #605d5d;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+label::after {
+    content: "+";
+    font-size: 35px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+.accordion .content {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type='radio']:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type='radio']:checked+label::after {
+    transform: rotate(135deg);
+}
+
+.faq .email-signup {
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+
+.faq small {
+    font-size: 20px;
+}
+
+.footer {
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+    background-color: black;
+    color: white;
+}
+
+.footer h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer .col {
+    flex-basis: 25%;
+   margin-bottom: 20px;
+}
+
+.footer .col a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.footer .row {
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.footer .language-btn {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.footer select {
+    background-color: transparent;
+    border: 1px solid #b8b0b0;
+}
+
+.footer select option {
+    background-color: transparent;
+    color: #fff;
+}
+
+.copyright-text {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.developer{
+    padding: 20px;
+    text-align: center;
+}
+.developer p{
+    color: rgb(23, 23, 141);
+    font-weight: bold;
+}
